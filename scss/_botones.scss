@@ -1,0 +1,24 @@
+.btn {
+	width: 100px;
+	height: 50px;
+	border: 1px solid white;
+	color: white;
+	background-color:#99A3A4;
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+}
+
+.btn--enviar{
+	@extend .btn;
+	background-color:#BFC9CA;
+	color:white;
+}
+
+.btn--limpiar{
+	@extend .btn;
+	background-color:#BFC9CA;
+	color:white;
+}
+
+

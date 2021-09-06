@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+}
+
+@import "colores";
+@import "fuente";
+@import "tamanos";
+@import "botones";
+
+body{
+background: #e2edee;
+	}
+
+
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+.parallax {
+		background-image: url("../assets/img/foto.jpg");
+		height: 300px;
+		background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;    
+        background-size: cover;
+        padding: 50px 30 px;
+        margin-bottom: 50px; 
+
+            }
+
+.gradienteNosotros{
+	background: linear-gradient(360deg, blue, white);
+ 				  }
+
+
+@keyframes primerAnimacion {
+	0%{width: 200px; background: white; }
+	25%{width: 300px; background-color: lightblue;}
+	50%{width: 400px; background-color: green; transform: rotate(180deg);}
+	75%{width: 300px; background-color: red;}
+	100%{width: 200px; background-color: hotpink;}
+							}
+
+.animacionProbando{
+	width: 100%;
+	height: auto;
+	background-color: hotpink;
+	animation-name: primerAnimacion;
+	animation-duration: 5s;
+	animation-delay: 0;
+	animation-iteration-count: 1; /*lo hace 1 vez*/
+	animation-timing-function: ease-in;
+}
+
+h1{
+	background: linear-gradient(80deg, #F1948A, white);
+ 				  }
+
+.inter{
+	line-height: 3; }
+  @media only screen and (max-width: 768px) {
+    .inter {
+      line-height: none; } 
+}
+
+
+.rectangulo{
+	width: 200px;
+	background-color: #F1B98A;
+	color: white;
+	text-align: center;
+	transition: all 2s;
+}
+
+.rectangulo:hover{
+	width: 400px;
+	height: auto;
+	background-color: #F18A98;
+	color: white;
+	text-align: left;
+	padding: 10px;
+}

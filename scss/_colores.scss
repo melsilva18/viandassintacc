@@ -1,0 +1,25 @@
+/*Variables de colores*/
+
+$rojo:red;
+$azul:blue;
+$verde:green;
+$blanco:white;
+
+.titulo{
+	&__principal{
+	color:$rojo
+	  }
+
+}
+
+@each $color in $azul, $verde, $rojo {
+	.#{$color}{
+		color:#{$color};
+	}
+}
+
+
+.paraNos{
+		color:$blanco;
+		}
+

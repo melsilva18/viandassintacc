@@ -1,0 +1,27 @@
+/*Variables de tamaño*/
+$padding:30px;
+
+
+
+.logo{
+	width:80px;
+}
+
+.paddingNos{
+	&__parrafo{
+	padding:$padding;
+			}
+}
+
+
+.paddingFrase{
+	&__parrafo{
+	padding:40px;
+	}
+}
+
+.foto{
+	width:100px
+}
+
+.tamañoFoto{width:100%;}
